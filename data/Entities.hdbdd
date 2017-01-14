@@ -1,0 +1,35 @@
+namespace SITIOTVOICE.data;
+
+@Schema : 'SITVOICE'
+
+context Entities {
+type SDate: UTCTimestamp;
+type SString: String(40);
+type LString: String(255);
+
+
+@Catalog.tableType : #COLUMN
+
+  
+Entity Agenda {
+    key ID: Integer;
+    TIMESTAMP: SDate;
+    TITLE: LString;
+    TRACK: SString;
+    SPEAKER: SString;
+    DURATION: Integer;
+  };
+
+Entity EchoFeedback {
+    key ID: Integer;
+    TIMESTAMP: SDate;
+    TITLE: LString;
+    TRACK: SString;
+    SPEAKER: SString;
+    DURATION: Integer;
+  };
+
+
+};
+
+

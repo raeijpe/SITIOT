@@ -1,0 +1,15 @@
+PROCEDURE "SITVOICE"."SITIOTVOICE.data::EchoFeedbackCreate" ( 
+     IN row "SITIOTVOICE.data::Entities.EchoFeedback",
+     OUT error "SITIOTVOICE.data::Types.tt_error"
+    )
+   LANGUAGE SQLSCRIPT
+   SQL SECURITY INVOKER
+   --DEFAULT SCHEMA <default_schema_name>
+   --READS SQL DATA
+   AS
+BEGIN
+   /*************************************
+       Write your procedure logic 
+   *************************************/
+   error = select 400 as HTTP_STATUS_CODE, 'Not implement yet' as ERROR_MESSAGE from dummy;
+END

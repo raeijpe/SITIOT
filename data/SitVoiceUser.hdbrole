@@ -1,0 +1,16 @@
+role SITIOTVOICE.data::SitVoiceUser
+{
+catalog sql object "SITVOICE"."SITIOTVOICE.data::Entities.Agenda": //Objecttype: TABLE
+	ALTER, DROP, SELECT, INSERT, UPDATE, DELETE, INDEX, TRIGGER, REFERENCES;
+catalog schema "SITVOICE": CREATE ANY, ALTER, DROP, EXECUTE, SELECT, INSERT, UPDATE, DELETE, INDEX, TRIGGER, DEBUG, REFERENCES;
+catalog sql object "SITVOICE"."SITIOTVOICE.data::EchoFeedbackCreate": //Objecttype: PROCEDURE
+	ALTER, EXECUTE, DROP, DEBUG;
+catalog sql object "SITVOICE"."SITIOTVOICE.data::EchoFeedbackId": //Objecttype: SEQUENCE
+	ALTER, DROP, SELECT;
+catalog sql object "SITVOICE"."SITIOTVOICE.data::Entities.EchoFeedback": //Objecttype: TABLE
+	ALTER, DROP, SELECT, INSERT, UPDATE, DELETE, INDEX, TRIGGER, REFERENCES;
+catalog sql object "SITVOICE"."SITIOTVOICE.data::Types.tt_error": //Objecttype: TABLE
+	SELECT;
+
+
+}

@@ -1,0 +1,7 @@
+service {
+       "SITIOTVOICE.data::Entities.Agenda" as "Agenda";
+       "SITIOTVOICE.data::Entities.EchoFeedback" as "EchoFeedback"
+            create using "SITIOTVOICE.data::EchoFeedbackCreate"
+            update forbidden
+            delete forbidden;
+}

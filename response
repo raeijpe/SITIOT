@@ -1,0 +1,21 @@
+{  
+   "version":"1.0",
+   "response":{  
+      "outputSpeech":{  
+         "type":"PlainText",
+         "text":"No!"
+      },
+      "reprompt":{  
+         "outputSpeech":{  
+            "type":"PlainText",
+            "text":"Hello are you still there?"
+         }
+      },
+      "shouldEndSession":true
+   }
+}
+
+
+
+
+[{"0":{"ID":3,"TIMESTAMP":"2017-01-14T12:00:00.000Z","TITLE":"SAP Community Platform Roadmap and Q&A","TRACK":"1","SPEAKER":"Oliver Kohl","DURATION":45}}]

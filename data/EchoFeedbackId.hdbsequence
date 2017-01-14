@@ -1,0 +1,5 @@
+schema="SITVOICE";
+start_with=1;
+minvalue=1;
+cycles=false;
+depends_on_table="SITIOTVOICE.data::Entities.EchoFeedback";

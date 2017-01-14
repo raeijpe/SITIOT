@@ -1,0 +1,31 @@
+namespace SITIOTVOICE.data;
+
+@Schema : 'SITVOICE'
+
+context Types {
+type SDate: UTCTimestamp;
+type SString: String(40);
+type LString: String(255);
+
+
+
+
+  
+type tt_error {
+    HTTP_STATUS_CODE: String(4);
+    ERROR_MESSAGE: String(255);
+
+  };
+
+type tt_Agenda {
+    ID: Integer;
+    TIMESTAMP: SDate;
+    TITLE: LString;
+    TRACK: SString;
+    SPEAKER: SString;
+    DURATION: Integer;
+  };
+
+
+
+};
